@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade {
+            animation: fadeEffect 1.5s;
+        }
+        @keyframes fadeEffect {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="flex items-center p-5 mt-5 space-x-2">
-        <img src="../image/logo.png" class="w-24 h-16 ml-20" />
-        <nav class="flex flex-wrap ml-20 font-bold">
+    <div class="flex justify-between items-center p-5 mt-5 space-x-2  ">
+        <img src="../image/logo.png" class="w-24 h-16 ml-5" />
+        <nav class="flex space-x-2  font-bold space-x-reverse">
             <a href="#" class="mx-2 p-5">Home</a>
             <a href="#" class="mx-2 p-5">Products</a>
             <a href="#" class="mx-2 p-5">Research</a>
@@ -22,67 +32,81 @@
         </nav>
 
     </div>
-    <div>
-        <img src="../image/products.jpeg" class="w-full" />
+    <div class=" slideshow-container relative w-full mx-auto">
+        <div class="mySlides fade hidden w-full">
+            
+            <img src="../image/products.jpeg" class="w-full">
+          
+        </div>
+       
+        <div class="mySlides fade hidden">
+            <img src="./image/products.jpeg" class="w-full h-fit">
+            
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
     </div>
 
     <div class="items-center p-10 font-extrabold text-2xl">
         <p class="text-center "><span class="text-red-600 items-center">Change The Life</span> Change The World</p>
     </div>
 
-    <div class="flex flex-row w-150 mb-10">
+    <div class="container flex flex-row w-150 mb-10 ml-20 space-x-4">
         <div class="w-25 border-2 border-y-orange-600 m-4 shadow-lg rounded-md">
-            <img src="../image/wallet.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-32">
+            <img src="../image/wallet.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-28">
             <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation
                 ullamco laboris nisi utm
                 aliquip sed duis aute.
             </p>
             <button
-                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-32 text-orange-600 font-bold">More</button>
+                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-28 text-orange-600 font-bold">More</button>
         </div>
 
         <div class="w-25 border-2 border-y-orange-600 m-4 shadow-lg rounded-md">
-            <img src="../image/user.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-32">
+            <img src="../image/user.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-28">
             <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation
                 ullamco laboris nisi utm
                 aliquip sed duis aute.
             </p>
             <button
-                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-32 text-orange-600 font-bold">More</button>
+                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-28 text-orange-600 font-bold">More</button>
         </div>
 
         <div class="w-25 border-2 border-y-orange-600 m-4 shadow-lg rounded-md">
-            <img src="../image/user.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-32">
+            <img src="../image/user.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-28">
             <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation
                 ullamco laboris nisi utm
                 aliquip sed duis aute.
             </p>
             <button
-                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-32 text-orange-600 font-bold">More</button>
+                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-28 text-orange-600 font-bold">More</button>
         </div>
 
         <div class="w-25 border-2 border-y-orange-600 m-4 shadow-lg rounded-md items-center justify-center">
-            <img src="../image/heart.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-32">
+            <img src="../image/heart.png" alt="logo" class="w-20 h-20 mt-5 items-center justify-items-center ml-28">
             <h2 class="text-center font-bold mb-3 mt-10">Get Inspired</h2>
             <p class="text-center ">Auis nostrud exercitation
                 ullamco laboris nisi utm
                 aliquip sed duis aute.
             </p>
             <button
-                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-32 text-orange-600 font-bold">More</button>
+                class="border-2 justify-items-center text-center justify-center border-orange-600 rounded-full px-5 my-4 ml-28 text-orange-600 font-bold">More</button>
         </div>
 
     </div>
 
-    <div class="mb-10">
+    <div class="container ml-14 mb-10">
         <section class=" h-96 ml-10 grid grid-cols-2 mb-7">
             <img src="../image/help.avif" alt="Products image">
-            <article class=" p-10  h-80">
+            <article class=" pl-5  h-80">
                 <p class=" font-bold text-3xl mb-4"><span class="text-red-600">We Help To</span> Helpless People</p>
-                <p class="font-normal text-lg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                <p class="font-normal text-lg "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut laboret dolore magna aliqua ut
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -96,13 +120,12 @@
         </section>
     </div>
 
-    <div
-        class="bg-red-600 p-12 flex flex-row space-x-64 ml-2 text-center text-white font-extrabold text-2xl mt-32 mb-20">
+    <div class="container bg-red-600 text-center justify-between flex flex-row py-10 font-bold text-white ml-24 mr-1 w-full px-4 mt-10 mb-10">
         <div>
             <p>$16,200+</p>
             <p>Donation</p>
         </div>
-        <div class="text-center">
+        <div>
             <p>10+</p>
             <p>Countries</p>
         </div>
@@ -121,24 +144,27 @@
     <div class="flex  mx-5 space-x-8">
         <div class="mx-5 rounded border-2 shadow-md shadow-black">
             <img class="rounded-lg" src="../image/products.jpeg" alt="">
-            <p class="text-orange-600">12th Octomber 2022</p> <br>
-            <p class="font-bold">Reaching Out With Food, Oxygen &
+            <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
+            <p class="font-bold p-3">Reaching Out With Food, Oxygen &
                 Care: Endearing Stories In The Time
                 Of Covid</p>
         </div>
         <div class="mx-3  rounded border-2 shadow-md shadow-black">
             <img class="rounded-lg" src="../image/products.jpeg" alt="">
-            <p class="text-orange-600">12th Octomber 2022</p><br>
-            <p class="font-bold">Reaching Out With Food, Oxygen &
-                Care: Endearing Stories In The Time
-                Of Covid</p>
+            <p class="text-orange-600 p-3"> 2nd July 2022</p><br>
+            <p class="font-bold p-3">Meghashrey NGO Along With Its 
+                Founder Seema Singh Spreads Joy 
+                And Happiness To Children By 
+                Organising A Christmas Carnival</p>
         </div>
         <div class="mx-3 rounded border-2 shadow-md shadow-black">
             <img class="rounded-lg" src="../image/products.jpeg" alt="">
-            <p class="text-orange-600">12th Octomber 2022</p><br>
-            <p class="font-bold pb-3">Reaching Out With Food, Oxygen &
-                Care: Endearing Stories In The Time
-                Of Covid</p>
+            <p class="text-orange-600 p-3">15th January 2021</p><br>
+            <p class="font-bold p-3">Indian American NGO Jumps To 10th 
+                Spot Among Charitable 
+                Organisations
+                 Non-Profits Supporting India's 
+                Covid-19 Cri</p>
         </div>
     </div>
 
@@ -148,20 +174,20 @@
         </div>
         <div>
             <h2 class="text-orange-600 font-bold">Contact Info</h2> <br>
-            <p class="text-wrap">Address : Your address goes here, Your Demo Address.</p><br>
-            <p> Phone :  +41999 9909 99</p>
-            <p>Email : care@domain.com</p>
+            <p class="text-wrap text-white">Address : Your address goes here, Your Demo Address.</p><br>
+            <p class="text-wrap text-white"> Phone :  +41999 9909 99</p>
+            <p class="text-wrap text-white">Email : care@domain.com</p>
         </div>
         <div>
             <h2 class="text-orange-600 font-bold">Important Links</h2><br>
-            <p> View Products</p><br>
-            <p>Contact Us</p><br>
-            <p>Testimonial</p><br>
-            <p> Support</p>
+            <p class="text-wrap text-white"> View Products</p><br>
+            <p class="text-wrap text-white">Contact Us</p><br>
+            <p class="text-wrap text-white">Testimonial</p><br>
+            <p class="text-wrap text-white"> Support</p>
         </div>
         <div class=" overflow-hidden">
             <h2 class="text-orange-600 font-bold"> Newsletter</h2> <br>
-            <p> Please Subscribe Here</p>
+            <p class="text-wrap text-white"> Please Subscribe Here</p>
             <input type="text" class="outline-none w-56 py-1" > <button class="bg-red-700 shrink-0 px-3 py-1 outline-1">></button>
             
         </div>
@@ -170,7 +196,7 @@
     <div class="flex flex-row bg-red-600 pl-20 p-4 text-white text-lg"> 
         <p>All rights reserved with company name, Copyright@2022.</p>
         <p class="pl-96">Follow us</p> 
-        <div class="flex flex-row bg-white w-32 mx-2">
+        <div class="flex flex-row bg-white w-38 mx-2 space-x-2">
             <img src="../image/Facebook.png" alt="Facebook" class="h-10 w-10">
             <img src="../image/insta.png" alt="Facebook" class="h-10 w-10">
             <img src="../image/twitter.png" alt="Facebook" class="h-10 w-10">
@@ -178,6 +204,28 @@
         </div>
     </div>
 
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.add("hidden");
+            }
+            slides[slideIndex].classList.remove("hidden");
+            slides[slideIndex].classList.add("fade");
+        }
+
+    </script>
 </body>
 
 </html>
