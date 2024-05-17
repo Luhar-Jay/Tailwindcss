@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/451f10fcb0.js" crossorigin="anonymous"></script>
         <style>
             .fade {
                 animation: fadeEffect 1.5s;
@@ -21,23 +22,32 @@
                     opacity: 1;
                 }
             }
+            .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
         </style>
     </head>
 
     <body>
-        <div class="flex flex-wrap mt-7 justify-between items-center p-5 space-x-2 md:mt-7 md:p-7 md:space-x-4 sm:space-x-1 ">
-            <img src="../image/logo.png" class="w-24 h-16 ml-5 md:w-10 md:h-8" />
-            <nav class="flex flex-wrap space-x-2  font-bold space-x-reverse">
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">Home</a>
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">Products</a>
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">Research</a>
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">News</a>
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">About us</a>
-                <a href="#" class="mx-2 p-5 hover:bg-slate-500">Contact</a>
-                <a href="#" class="mx-2 bg-red-500 hover:bg-slate-500 p-5 text-center shadow-2xl">Donate</a>
-            </nav>
-
+        <div class="flex flex-wrap mt-7 justify-between items-center p-5 space-x-2 md:mt-7 md:p-7 md:space-x-4 sm:space-x-1">
+            <img src="../image/logo.png" class="w-24 h-16 ml-5" />
+            <button type="button" class="block sm:hidden border-2 rounded-md p-2 px-2 hover:bg-slate-500 hover:text-white" onclick="toggleNavbar()">
+                <span class="fa-solid fa-bars"></span>
+            </button>
         </div>
+        
+        <div id="myTopnav" class="dropDown hidden">
+            <nav class="flex-wrap sm:flex space-x-2 flex-col gap-6 items-center py-2 text-lg font-bold">
+                <a href="#" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">Home</a>
+                <a href="#" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">Products</a>
+                <a href="#" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">Research</a>
+                <a href="#" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">News</a>
+                <a href="About.html" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">About us</a>
+                <a href="#" class="mx-2 p-5 hover:bg-slate-500 hover:text-white rounded-md">Contact</a>
+                <a href="#" class="mx-2 bg-red-500 hover:bg-slate-500 p-5 text-center shadow-2xl rounded-md hover:text-white">Donate</a>
+            </nav>
+        </div>
+        
         <div class=" slideshow-container relative w-full mx-auto ">
             <div class="mySlides fade hidden w-full">
 
@@ -220,6 +230,15 @@
                 slides[slideIndex].classList.remove("hidden");
                 slides[slideIndex].classList.add("fade");
             }
+
+            function toggleNavbar() {
+    var x = document.getElementById("myTopnav");
+    if (x.classList.contains("hidden")) {
+        x.classList.remove("hidden");
+    } else {
+        x.classList.add("hidden");
+    }
+}
 
         </script>
     </body>
