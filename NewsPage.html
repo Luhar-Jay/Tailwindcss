@@ -30,7 +30,7 @@
 
 <body>
     <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7 border-b-2">
-        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" />
+        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" alt="Logo" />
         <button id="menu-toggle" class="md:hidden text-black">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -38,15 +38,16 @@
             </svg>
         </button>
         <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
-            <a href="#"
+            <a href="index.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
-            <a href="#"
+            <a href="ProductPage.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
             <a href="#"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
-            <a href="#"
+            <a href="NewsPage.html"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">
+                News</a>
+            <a href="About.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About
                 us</a>
             <a href="#"
@@ -55,6 +56,8 @@
                 class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
         </nav>
     </header>
+
+
 
 
 
@@ -183,7 +186,7 @@
 
 <!-- footer here -->
 
-<div class="mt-20 bg-slate-700 md:grid md:grid-cols-4 flex flex-wrap p-5">
+<div class="mt-20 bg-gray-950  md:grid md:grid-cols-4 flex flex-wrap p-5">
     <div class="flex flex-wrap">
         <img src="../image/logo.png" alt="logo" class=" flex flex-wrap h-20 w-28 ml-11 ">
     </div>
@@ -224,7 +227,16 @@
 
 <!-- footer end here -->
 
-
+<script>
+     document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+</script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
 
 <body>
     <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7 border-b-2">
-        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" />
+        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" alt="Logo" />
         <button id="menu-toggle" class="md:hidden text-black">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -19,15 +19,16 @@
             </svg>
         </button>
         <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
-            <a href="#"
+            <a href="index.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
-            <a href="#"
+            <a href="ProductPage.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
             <a href="#"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
-            <a href="#"
+            <a href="NewsPage.html"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">
+                News</a>
+            <a href="About.html"
                 class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About
                 us</a>
             <a href="#"
@@ -36,6 +37,8 @@
                 class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
         </nav>
     </header>
+
+
 
     <div class="w-100 h-auto text-center flex flex-wrap items-center p-10 flex-col">
 
@@ -50,7 +53,7 @@
             </div>
             <article>
                 <p class="text-red-500 font-bold text-4xl text-start justify-start">Orange Juice</p>
-                <p class="text-gray-900 justify-start text-start p-4 font-medium"> F-75 milk - initial phase of SAM
+                <p class="text-gray-900 justify-start  text-start p-4 font-medium"> F-75 milk - initial phase of SAM
                     treatment (or
                     stabilization phase), according to the WHO protocol</p>
                 <p class="text-gray-900 justify-start text-start p-4"> 400 g tin (enriched powdered milk to be
@@ -81,7 +84,7 @@
         <div class="my-5 ml-5 ">
             <p class="font-bold"> For any case of severate acute malnutrition with medical complication and/or without
                 appetite</p>
-            <p class="text-slate-500 mt-5"> When a child suffering from severe acute malnutrition arrives at the
+            <p class="text-slate-500 mt-5 text-justify w-100 h-full"> When a child suffering from severe acute malnutrition arrives at the
                 hospital, he/she often shows infections, hepatic and intestinal insufficiency, or electrolyte
                 imbalances (excess or insufficiency of elements such as sodium, potassium, calcium or even magnesium). A
                 child with such complications is unable to tolerate
@@ -94,7 +97,7 @@
 
             <p class="font-bold mt-10"> For any case of severate acute malnutrition with medical complication and/or without
                 appetite</p>
-            <p class="text-slate-500 mt-5"> When a child suffering from severe acute malnutrition arrives at the
+            <p class="text-slate-500 text-justify mt-5"> When a child suffering from severe acute malnutrition arrives at the
                 hospital, he/she often shows infections, hepatic and intestinal insufficiency, or electrolyte
                 imbalances (excess or insufficiency of elements such as sodium, potassium, calcium or even magnesium). A
                 child with such complications is unable to tolerate
@@ -150,6 +153,18 @@
 </div>
 
 <!-- footer end here -->
+
+
+<script>
+     document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+</script>
 
 </body>
 
