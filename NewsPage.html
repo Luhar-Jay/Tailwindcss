@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        .fade {
+            animation: fadeEffect 1.5s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7 border-b-2">
+        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" />
+        <button id="menu-toggle" class="md:hidden text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About
+                us</a>
+            <a href="#"
+                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
+            <a href="#"
+                class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
+        </nav>
+    </header>
+
+
+
+    <p class="text-center font-bold mt-10 text-3xl mb-10"><span class="text-red-600 items-center">Latest </span>News</p>
+
+    <div class="container mx-auto mb-10 p-4 md:p-10 space-y-4 md:space-y-2 md:space-x-2 flex flex-wrap justify-center">
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
+            <p class="font-bold p-3"> Reaching Out With Food, Oxygen & 
+                Care: Endearing Stories In The Time 
+                Of Covid</p>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3">2nd July 2022</p> <br>
+            <p class="font-bold p-3">Meghashrey NGO Along With Its 
+                Founder Seema Singh Spreads Joy 
+                And Happiness To Children By 
+                Organising A Christmas Carnival</p>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3"> 15th January 2021</p> <br>
+            <p class="font-bold p-3">Indian American NGO Jumps To 10th 
+                Spot Among Charitable 
+                Organisations
+                 Non-Profits Supporting India's 
+                Covid-19 Cri</p>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
+            <p class="font-bold p-3"> Reaching Out With Food, Oxygen & 
+                Care: Endearing Stories In The Time 
+                Of Covid</p>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3">2nd July 2022</p> <br>
+            <p class="font-bold p-3">Meghashrey NGO Along With Its 
+                Founder Seema Singh Spreads Joy 
+                And Happiness To Children By 
+                Organising A Christmas Carnival</p>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <p class="text-orange-600 p-3"> 15th January 2021</p> <br>
+            <p class="font-bold p-3">Indian American NGO Jumps To 10th 
+                Spot Among Charitable 
+                Organisations
+                 Non-Profits Supporting India's 
+                Covid-19 Cri</p>
+        </div>
+        
+
+    </div>
+
+
+    <div class="my-10  grid-cols-2 flex-wrap md:grid mx-10 justify-between">
+        <div class="mx-4 flex-wrap md:flex-row">
+            <div class="border-b-2 border-b-gray-600 rounded-b-sm">
+                <p class="font-bold">Related News</p>
+            </div>
+            <div class="bg-zinc-200 flex flex-row mt-4 mx-3">
+                <div class="text-wrap p-1.5 ">
+                    <p class="text-wrap p-1 pl-4 text-slate-600"> <span class="font-bold ">25 MAY </span>2022</p>
+                </div>
+                <div class="text-red-600"> The Lancet recommends the use of SQ-LNS as an
+                    essential interventions to re...
+                </div>
+
+            </div>
+            <div class="bg-zinc-200 flex flex-row mt-4 mx-3">
+                <div class="text-wrap p-2 ">
+                    <p class="text-wrap p-1 pl-4 text-slate-600"> <span class="font-bold ">25 MAY </span>2022</p>
+                </div>
+                <div class="text-red-600"> The Lancet recommends the use of SQ-LNS as an
+                    essential interventions to re...
+                </div>
+
+            </div>
+            <div class="bg-zinc-200 flex flex-row mt-4 mx-3">
+                <div class="text-wrap p-2 ">
+                    <p class="text-wrap p-1 pl-4 text-slate-600"> <span class="font-bold ">25 MAY </span>2022</p>
+                </div>
+                <div class="text-red-600"> The Lancet recommends the use of SQ-LNS as an
+                    essential interventions to re...
+                </div>
+
+            </div>
+            <div class="bg-zinc-200 flex flex-row mt-4 mx-3">
+                <div class="text-wrap p-2 ">
+                    <p class="text-wrap p-1 pl-4 text-slate-600"> <span class="font-bold ">25 MAY </span>2022</p>
+                </div>
+                <div class="text-red-600"> The Lancet recommends the use of SQ-LNS as an
+                    essential interventions to re...
+                </div>
+
+            </div>
+        </div>
+        <div class="ml-9">
+            <div class="border-b-2 border-b-gray-600 rounded-b-sm">
+                <p class="font-bold">News Category</p>
+            </div>
+            <div class= "mx-7 text-white font-bold font-sans text-lg flex flex-row mt-4 justify-center py-[21px] bg-red-600">
+                <p>Nutration Food</p>
+
+            </div>
+            <div class= "text-white mx-7 font-bold font-sans text-lg flex flex-row mt-4 justify-center py-[21px] bg-red-600">
+                <p>Nutration Food</p>
+
+            </div>
+            <div class= "text-white mx-7 font-bold font-sans text-lg flex flex-row mt-4 justify-center py-[21px] bg-red-600">
+                <p>Nutration Food</p>
+
+            </div>
+            <div class= "text-white mx-7 font-bold font-sans text-lg flex flex-row mt-4 justify-center py-[21px] bg-red-600">
+                <p>Nutration Food</p>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer here -->
+
+<div class="mt-20 bg-slate-700 md:grid md:grid-cols-4 flex flex-wrap p-5">
+    <div class="flex flex-wrap">
+        <img src="../image/logo.png" alt="logo" class=" flex flex-wrap h-20 w-28 ml-11 ">
+    </div>
+    <div class="">
+        <h2 class="text-orange-600 font-bold">Contact Info</h2> <br>
+        <p class="text-wrap text-white">Address : Your address goes here, Your Demo Address.</p><br>
+        <p class="text-wrap text-white"> Phone : +41999 9909 99</p>
+        <p class="text-wrap text-white">Email : care@domain.com</p>
+    </div>
+    <div>
+        <h2 class="text-orange-600 font-bold">Important Links</h2><br>
+        <p class="text-wrap text-white"> View Products</p><br>
+        <p class="text-wrap text-white">Contact Us</p><br>
+        <p class="text-wrap text-white">Testimonial</p><br>
+        <p class="text-wrap text-white"> Support</p>
+    </div>
+    <div class="ml-3">
+        <h2 class="text-orange-600 font-bold"> Newsletter</h2> <br>
+        <p class="text-wrap text-white"> Please Subscribe Here</p>
+        <input type="text" class="outline-none w-56 py-1"> <button
+            class="bg-red-700 shrink-0 px-3 py-1 outline-1 font-extrabold hover:bg-slate-500">></button>
+
+    </div>
+</div>
+
+<div class="flex flex-wrap bg-red-600 pl-20 p-4 text-white text-lg">
+    <p>All rights reserved with company name, Copyright@2022.</p>
+    <div class="flex">
+        <p class="flex flex-row space-x-reverse sm:ml-20 md:ml-96 sm:m-50">Follow us</p>
+        <div class="flex flex-wrap bg-white w-38 mx-2 space-x-2">
+            <img src="../image/Facebook.png" alt="Facebook" class="h-10 w-10">
+            <img src="../image/insta.png" alt="Facebook" class="h-10 w-10">
+            <img src="../image/twitter.png" alt="Facebook" class="h-10 w-10">
+            <img src="../image/tik.png" alt="Facebook" class="h-10 w-10">
+        </div>
+    </div>
+</div>
+
+<!-- footer end here -->
+
+
+</body>
+
+</html>

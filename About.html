@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,45 +21,51 @@
                 opacity: 1;
             }
         }
+
         .transition-transform {
-        transition: transform 0.3s ease-in-out;
-    }
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
-<body>
-    <nav class="w-full h-14 flex justify-between px-4 items-center md:px-4">
-        <div class="items-center">
-            <img class="h-10" src="image/logo.png" alt="">
-        </div>
-        <ul class="md:flex hidden font-bold">
-            <li class="m-4 cursor-pointer ">Home</li>
-            <li class="m-4 cursor-pointer ">Products</li>
-            <li class="m-4 cursor-pointer ">Research</li>
-            <li class="m-4 cursor-pointer "> News</li>
-            <li class="m-4 cursor-pointer ">About us</li>
-            <li class="m-4 cursor-pointer ">Contact</li>
-            <li class="m-4 cursor-pointer bg-red-600 rounded-sm p-1">Donate</li>
-        </ul>
-    </nav>
 
-    <!-- images here -->
+<body>
+    <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7">
+        <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" />
+        <button id="menu-toggle" class="md:hidden text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About us</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
+            <a href="#"
+                class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
+        </nav>
+    </header>
+    <!-- images slideshow here -->
     <div class=" slideshow-container relative w-full mx-auto ">
         <div class="mySlides fade hidden w-full">
-            
+
             <img src="image/products.jpeg" class="w-full">
-            
+
         </div>
-        
+
         <div class="mySlides fade hidden">
             <img src="image/products.jpeg" class="w-full h-fit">
-            
+
         </div>
-        <a class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold"
-        onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold"
-        onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 rounded-r-lg font-extrabold"
+            onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next absolute top-1/2 right-0 transform rounded-l-lg -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold"
+            onclick="plusSlides(1)">&#10095;</a>
     </div>
-    
+
     <!-- images edn here -->
 
     <!-- About us here -->
@@ -66,21 +73,24 @@
     <div class="w-100 h-auto text-center flex flex-wrap items-center p-10 flex-col">
         <p class=" font-bold text-3xl mb-4"><span class="text-red-600">ABOUT </span>US</p>
         <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-           
-            <article >
-                <p class="text-red-500 font-bold text-2xl text-start justify-start p-6"> We Provide Worldwide Charity 
+
+            <article>
+                <p class="text-red-500 font-bold text-2xl text-start justify-start p-6"> We Provide Worldwide Charity
                     Service Since 1978</p>
-                <p class="text-gray-900 justify-start text-start p-9"> Lorem Ipsum is simply dummy text of the printing and typesetting 
+                <p class="text-gray-900 justify-start text-start p-9"> Lorem Ipsum is simply dummy text of the printing
+                    and typesetting
                     industry. Lorem loremIpsum has been the industry's</p>
-                <p class="text-gray-900 justify-start text-start p-9"> since the 1500s, when an un known printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived 
+                <p class="text-gray-900 justify-start text-start p-9"> since the 1500s, when an un known printer took a
+                    galley of type
+                    and scrambled it to make a type specimen book. It has survived
                     not only five centuries, but also the leap into electronic typesetting</p>
-                <p class="text-gray-900 justify-start text-start p-9">Type and scrambled it to make a type specimen book. It has 
-                    survived not only five centuries, but also the leap into electronic 
+                <p class="text-gray-900 justify-start text-start p-9">Type and scrambled it to make a type specimen
+                    book. It has
+                    survived not only five centuries, but also the leap into electronic
                     typesetting</p>
             </article>
             <img src="../image/help.avif" alt="Products image" class="w-full h-auto mr-10">
-        </section>  
+        </section>
     </div>
 
     <!-- About us here -->
@@ -90,49 +100,69 @@
 
     <div class="container p-10 flex flex-col ml-10 flex-wrap text-justify w-100 h-auto">
         <h1 class="text-start font-bold text-2xl text-red-500"> This is Heading 1 </h1>
-        <p class="pt-5 w-100 h-full">since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
-            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
-            only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer took a galley of type 
-            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since the 1500s, when an un 
-            known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting 
-            since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
-            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+        <p class="pt-5 w-100 h-full">since the 1500s, when an un known printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer
+            took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since
+            the 1500s, when an un known printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting since the 1500s, when an un
+            known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting
+            since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the
+            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting</p>
     </div>
 
     <!-- Heading end here -->
 
     <div class="w-100 h-auto text-center flex flex-wrap items-center p-10 flex-col">
-        
+
         <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="../image/help.avif" alt="Products image" class="w-full h-auto mr-10">
-            <article >
-                <p class="text-red-500 font-bold text-2xl text-start justify-start p-6"> We Provide Worldwide Charity Service Since 1978</p>
-                <p class="text-gray-900 justify-start text-start p-9"> Lorem Ipsum is simply dummy text of the printing and typesetting 
+            <article>
+                <p class="text-red-500 font-bold text-2xl text-start justify-start p-6"> We Provide Worldwide Charity
+                    Service Since 1978</p>
+                <p class="text-gray-900 justify-start text-start p-9"> Lorem Ipsum is simply dummy text of the printing
+                    and typesetting
                     industry. Lorem loremIpsum has been the industry's</p>
-                <p class="text-gray-900 justify-start text-start p-9"> since the 1500s, when an un known printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived 
+                <p class="text-gray-900 justify-start text-start p-9"> since the 1500s, when an un known printer took a
+                    galley of type
+                    and scrambled it to make a type specimen book. It has survived
                     not only five centuries, but also the leap into electronic typesetting</p>
-                <p class="text-gray-900 justify-start text-start p-9">Type and scrambled it to make a type specimen book. It has 
-                    survived not only five centuries, but also the leap into electronic 
+                <p class="text-gray-900 justify-start text-start p-9">Type and scrambled it to make a type specimen
+                    book. It has
+                    survived not only five centuries, but also the leap into electronic
                     typesetting</p>
             </article>
-            
-        </section>  
+
+        </section>
     </div>
 
 
     <div class="container p-10 flex flex-col ml-10 flex-wrap text-justify w-100 h-auto">
         <h1 class="text-start font-bold text-2xl text-red-500"> This is Heading 1 </h1>
-        <p class="pt-5 w-100 h-full">since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
-            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
-            only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer took a galley of type 
-            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since the 1500s, when an un 
-            known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting 
-            since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
-            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+        <p class="pt-5 w-100 h-full">since the 1500s, when an un known printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting since the 1500s, when an un known printer
+            took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting since
+            the 1500s, when an un known printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting since the 1500s, when an un
+            known printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting
+            since the 1500s, when an un known printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the
+            leap into electronic typesetting since the 1500s, when an un known printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting</p>
     </div>
 
@@ -140,38 +170,38 @@
         <div class="text-center items-center text-3xl font-bold my-10">
             <p class="font-serif"><span class="text-red-500">Meet our</span> Volunteers</p>
         </div>
-        <div class="flex flex-row mr-5 space-x-4 py-10 mx-20 justify-between">
+        <div class="flex flex-row mr-5 w-auto h-auto space-x-4 py-10 mx-20 justify-between">
             <div class="flex flex-col border-2 bg-white rounded shadow-md font-serif">
                 <img src="image/products.jpeg" alt="" class="w-60 h-52">
                 <p class="pl-2 font-bold ">John Smit</p>
                 <div class="flex flex-row justify-between">
-                <p class="pl-2 text-red-500 font-thin">Teacher</p>
-                <a href="#" class="mr-4">View</a>
-            </div>
-            </div>
-            <div class="flex flex-col border-2 bg-white rounded shadow-md font-serif">
-                <img src="image/products.jpeg" alt="" class="w-60 h-52">
-                <p class="pl-2 font-bold ">John Smit</p>
-                <div class="flex flex-row justify-between">
-                <p class="pl-2 text-red-500 font-thin">Teacher</p>
-                <a href="#" class="mr-4">View</a>
-            </div>
+                    <p class="pl-2 text-red-500 font-thin">Teacher</p>
+                    <a href="#" class="mr-4">View</a>
+                </div>
             </div>
             <div class="flex flex-col border-2 bg-white rounded shadow-md font-serif">
                 <img src="image/products.jpeg" alt="" class="w-60 h-52">
                 <p class="pl-2 font-bold ">John Smit</p>
                 <div class="flex flex-row justify-between">
-                <p class="pl-2 text-red-500 font-thin">Teacher</p>
-                <a href="#" class="mr-4">View</a>
-            </div>
+                    <p class="pl-2 text-red-500 font-thin">Teacher</p>
+                    <a href="#" class="mr-4">View</a>
+                </div>
             </div>
             <div class="flex flex-col border-2 bg-white rounded shadow-md font-serif">
                 <img src="image/products.jpeg" alt="" class="w-60 h-52">
                 <p class="pl-2 font-bold ">John Smit</p>
                 <div class="flex flex-row justify-between">
-                <p class="pl-2 text-red-500 font-thin">Teacher</p>
-                <a href="#" class="mr-4">View</a>
+                    <p class="pl-2 text-red-500 font-thin">Teacher</p>
+                    <a href="#" class="mr-4">View</a>
+                </div>
             </div>
+            <div class="flex flex-col border-2 bg-white rounded shadow-md font-serif">
+                <img src="image/products.jpeg" alt="" class="w-60 h-52">
+                <p class="pl-2 font-bold ">John Smit</p>
+                <div class="flex flex-row justify-between">
+                    <p class="pl-2 text-red-500 font-thin">Teacher</p>
+                    <a href="#" class="mr-4">View</a>
+                </div>
             </div>
         </div>
     </div>
@@ -184,21 +214,65 @@
                 we are happy</p>
             <button class=" bg-white text-blue-950 mt-3 font-bold p-5 items-center justify-center">Join us</button>
         </div>
-        <div class="text-white text-center flex space-x-8 text-2xl font-bold justify-end">
-        <div >
-            <p>51</p>
-            <p>AWARDS</p>
-        </div>
-        <div>
-            <p> 400</p>
-            <p>VOLUNTEER    </p>
-        </div>
-        <div>
-            <p>25</p>
-            <p>PROJECTS</p>
+        <div class="text-white text-center flex flex-wrap space-x-8 text-2xl font-bold justify-end">
+            <div>
+                <p>51</p>
+                <p>AWARDS</p>
+            </div>
+            <div>
+                <p> 400</p>
+                <p>VOLUNTEER </p>
+            </div>
+            <div>
+                <p>25</p>
+                <p>PROJECTS</p>
+            </div>
         </div>
     </div>
+
+    <!-- footer here -->
+
+    <div class="mt-20 bg-slate-700 md:grid md:grid-cols-4 flex flex-wrap p-5">
+        <div class="flex flex-wrap">
+            <img src="../image/logo.png" alt="logo" class=" flex flex-wrap h-20 w-28 ml-11 ">
+        </div>
+        <div class="">
+            <h2 class="text-orange-600 font-bold">Contact Info</h2> <br>
+            <p class="text-wrap text-white">Address : Your address goes here, Your Demo Address.</p><br>
+            <p class="text-wrap text-white"> Phone : +41999 9909 99</p>
+            <p class="text-wrap text-white">Email : care@domain.com</p>
+        </div>
+        <div>
+            <h2 class="text-orange-600 font-bold">Important Links</h2><br>
+            <p class="text-wrap text-white"> View Products</p><br>
+            <p class="text-wrap text-white">Contact Us</p><br>
+            <p class="text-wrap text-white">Testimonial</p><br>
+            <p class="text-wrap text-white"> Support</p>
+        </div>
+        <div class="ml-3">
+            <h2 class="text-orange-600 font-bold"> Newsletter</h2> <br>
+            <p class="text-wrap text-white"> Please Subscribe Here</p>
+            <input type="text" class="outline-none w-56 py-1"> <button
+                class="bg-red-700 shrink-0 px-3 py-1 outline-1 font-extrabold hover:bg-slate-500">></button>
+
+        </div>
     </div>
+
+    <div class="flex flex-wrap bg-red-600 pl-20 p-4 text-white text-lg">
+        <p>All rights reserved with company name, Copyright@2022.</p>
+        <div class="flex">
+            <p class="flex flex-row space-x-reverse sm:ml-20 md:ml-96 sm:m-50">Follow us</p>
+            <div class="flex flex-wrap bg-white w-38 mx-2 space-x-2">
+                <img src="../image/Facebook.png" alt="Facebook" class="h-10 w-10">
+                <img src="../image/insta.png" alt="Facebook" class="h-10 w-10">
+                <img src="../image/twitter.png" alt="Facebook" class="h-10 w-10">
+                <img src="../image/tik.png" alt="Facebook" class="h-10 w-10">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer end here -->
+
 
     <script>
         let slideIndex = 0;
@@ -219,6 +293,7 @@
             slides[slideIndex].classList.remove("hidden");
             slides[slideIndex].classList.add("fade");
         }
-</script>
+    </script>
 </body>
+
 </html>
