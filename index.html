@@ -30,44 +30,32 @@
 </head>
 
 <body>
-    <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7 border-b-2">
+    <header class="flex flex-wrap items-center justify-between p-7  md:p-7 fixed top-0 left-0 w-full bg-white z-50 shadow-md">
         <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" alt="Logo" />
-        <button id="menu-toggle" class="md:hidden text-black">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
+        <button id="menu-toggle" class="md:hidden text-black border-2 rounded-md px-4 py-2 hover:border-slate-400">
+            <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
-            <a href="index.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
-            <a href="ProductPage.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
-            <a href="NewsPage.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">
-                News</a>
-            <a href="About.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About
-                us</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
-            <a href="#"
-                class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
+        <nav id="menu" class="font-opens hidden static md:flex text-center md:items-center md:space-x-2 w-full md:w-auto">
+            <a href="index.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
+            <a href="ProductPage.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
+            <a href="NewsPage.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
+            <a href="About.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About us</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
+            <a href="#" class="block md:inline-block mx-2 bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-sm shadow-gray-900">Donate</a>
         </nav>
     </header>
 
 
-    <div class=" slideshow-container relative w-full mx-auto ">
-        <div class="mySlides fade hidden w-full">
+    <div class=" slideshow-container relative w-full mx-auto mt-28 ">
+        <div class="mySlides fade hidden duration-700 w-full">
 
             <img src="image/products.jpeg" class="w-full">
 
         </div>
 
         <div class="mySlides fade hidden">
-            <img src="image/products.jpeg" class="w-full h-fit">
+            <img src="image/products.jpeg" class="w-full">
 
         </div>
         <a class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-black text-2xl p-4 cursor-pointer hover:bg-red-700 font-extrabold"
@@ -76,22 +64,21 @@
             onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    </div>
 
     <div class="items-center p-10 font-extrabold text-2xl">
         <p class="text-center "><span class="text-red-600 items-center">Change The Life</span> Change The World</p>
     </div>
 
-    <div class="container mx-auto mb-10 p-4 md:p-10 space-y-4 md:space-y-2 md:space-x-2 flex flex-wrap justify-center">
-        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+    <div class="container gap-10 mx-auto mb-10 p-4 md:p-10 space-y-4 md:space-y-2 items-center text-center md:space-x-2 flex flex-wrap justify-start">
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 justify-center shadow-lg rounded-md p-4 mt-2">
             <img src="../image/wallet.png" alt="logo" class="w-20 h-20 mx-auto mt-5">
-            <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
+            <h2 class="text-center font-bold font-opens mb-3 mt-10 font-sans">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation ullamco laboris nisi utm aliquip sed duis aute.</p>
             <button
                 class="border-2 text-center border-orange-600 rounded-full px-5 my-4 mx-auto text-orange-600 font-bold md:items-center">More</button>
         </div>
 
-        <div class="w-full md:w-1/4 border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+        <div class="w-full md:w-1/4 border-2 border-y-orange-600 shadow-lg rounded-md p-4">
             <img src="../image/user.png" alt="logo" class="w-20 h-20 mx-auto mt-5">
             <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation ullamco laboris nisi utm aliquip sed duis aute.</p>
@@ -99,7 +86,7 @@
                 class="border-2 text-center border-orange-600 rounded-full px-5 my-4 mx-auto text-orange-600 font-bold">More</button>
         </div>
 
-        <div class="w-full md:w-1/4 border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+        <div class="w-full md:w-1/4 border-2 border-y-orange-600 shadow-lg rounded-md p-4">
             <img src="../image/user.png" alt="logo" class="w-20 h-20 mx-auto mt-5">
             <h2 class="text-center font-bold mb-3 mt-10">Help The Children</h2>
             <p class="text-center">Auis nostrud exercitation ullamco laboris nisi utm aliquip sed duis aute.</p>
@@ -122,7 +109,7 @@
         <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="../image/help.avif" alt="Products image" class="w-full h-auto">
             <article class=" p-4">
-                <p class=" font-bold text-3xl mb-4"><span class="text-red-600">We Help To</span> Helpless People</p>
+                <p class=" font-bold font-open text-3xl mb-4"><span class="text-red-600">We Help To</span> Helpless People</p>
                 <p class="text-lg "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut laboret dolore magna aliqua ut
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -131,7 +118,7 @@
                     nulla pariatur excepteur sint occaecat cupidatat non proident. <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt.<br><br>
-                    <span class="font-sans font-bold">Denny Densoppa</span>
+                    <span class="italic">Denny Densoppa</span>
                 </p>
             </article>
         </section>
@@ -156,24 +143,24 @@
         </div>
     </div>
 
-    <p class="text-center font-bold text-3xl mb-10"><span class="text-red-600 items-center">Latest </span>News</p>
+    <p class="text-center font-bold text-3xl m-10"><span class="text-red-600 items-center">Latest </span>News</p>
 
-    <div class="container mx-auto mb-10 p-4 md:p-10 space-y-4 md:space-y-2 md:space-x-2 flex flex-wrap justify-center">
-        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+    <div class="container mx-auto mb-10 md:p-10 space-y-4 gap-8 md:space-y-2 md:space-x-2 flex flex-wrap justify-center">
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 rounded-md p-4 mt-2">
+            <img src="image/products.jpeg" alt="logo" class="w-full h-auto mx-auto rounded-lg">
+            <h2 class="text-center font-bold font-opens mb-3 mt-10 font-sans">Help The Children</h2>
+            <p class="text-center">Auis nostrud exercitation ullamco laboris nisi utm aliquip sed duis aute.</p>
+            <button
+                class="border-2 text-center border-orange-600 rounded-full px-5 my-4 mx-auto text-orange-600 font-bold md:items-center">More</button>
+        </div>
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md p-4">
             <img class="rounded-lg" src="../image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
             <p class="font-bold p-3">Reaching Out With Food, Oxygen &
                 Care: Endearing Stories In The Time
                 Of Covid</p>
         </div>
-        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
-            <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
-            <p class="font-bold p-3">Reaching Out With Food, Oxygen &
-                Care: Endearing Stories In The Time
-                Of Covid</p>
-        </div>
-        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md p-4">
             <img class="rounded-lg" src="../image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
             <p class="font-bold p-3">Reaching Out With Food, Oxygen &
@@ -182,7 +169,7 @@
         </div>
     </div>
 
-    <div class="mt-20   md:grid md:grid-cols-4 flex flex-wrap p-5">
+    <div class="mt-20 bg-slate-950  md:grid md:grid-cols-4 flex flex-wrap p-5">
         <div class="flex flex-wrap">
             <img src="../image/logo.png" alt="logo" class=" flex flex-wrap h-20 w-28 ml-11 ">
         </div>
@@ -194,7 +181,7 @@
         </div>
         <div>
             <h2 class="text-orange-600 font-bold">Important Links</h2><br>
-            <p class="text-wrap text-white"> View Products</p><br>
+            <p class="text-wrap sans-serif text-white"> View Products</p><br>
             <p class="text-wrap text-white">Contact Us</p><br>
             <p class="text-wrap text-white">Testimonial</p><br>
             <p class="text-wrap text-white"> Support</p>
@@ -203,7 +190,7 @@
             <h2 class="text-orange-600 font-bold"> Newsletter</h2> <br>
             <p class="text-wrap text-white"> Please Subscribe Here</p>
             <input type="text" class="outline-none w-56 py-1"> <button
-                class="bg-red-700 shrink-0 px-3 py-1 outline-1 font-extrabold hover:bg-slate-500">></button>
+                class="bg-red-700 shrink-0 px-3 py-1 outline-1 font-extrabold hover:bg-slate-500">&#10095;</button>
 
         </div>
     </div>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/451f10fcb0.js" crossorigin="anonymous"></script>
     <title>News Page</title>
 
     <style>
@@ -29,31 +30,19 @@
 </head>
 
 <body>
-    <header class="flex flex-wrap items-center justify-between p-5 md:mt-7 md:p-7 border-b-2">
+    <header class="flex flex-wrap items-center justify-between p-7  md:p-7 fixed top-0 left-0 w-full bg-white z-50 shadow-md">
         <img src="image/logo.png" class="md:w-24 md:h-16 ml-5 w-10 h-8 rounded-full" alt="Logo" />
-        <button id="menu-toggle" class="md:hidden text-black">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
+        <button id="menu-toggle" class="md:hidden text-black border-2 rounded-md px-4 py-2 hover:border-slate-400">
+            <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="menu" class="hidden md:flex md:items-center md:space-x-2 font-bold w-full md:w-auto">
-            <a href="index.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
-            <a href="ProductPage.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
-            <a href="NewsPage.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">
-                News</a>
-            <a href="About.html"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About
-                us</a>
-            <a href="#"
-                class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
-            <a href="#"
-                class="block md:inline-block mx-2 rounded-lg bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-2xl">Donate</a>
+        <nav id="menu" class="font-opens hidden static md:flex text-center md:items-center md:space-x-2 w-full md:w-auto">
+            <a href="index.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Home</a>
+            <a href="ProductPage.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Products</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Research</a>
+            <a href="NewsPage.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">News</a>
+            <a href="About.html" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">About us</a>
+            <a href="#" class="block md:inline-block rounded-lg hover:text-white mx-2 p-2 md:p-5 hover:bg-slate-500">Contact</a>
+            <a href="#" class="block md:inline-block mx-2 bg-red-500 hover:bg-slate-500 hover:text-white p-2 md:p-5 text-center shadow-sm shadow-gray-900">Donate</a>
         </nav>
     </header>
 
@@ -61,18 +50,18 @@
 
 
 
-    <p class="text-center font-bold mt-10 text-3xl mb-10"><span class="text-red-600 items-center">Latest </span>News</p>
+    <p class="text-center font-bold mt-10 gap-10 text-3xl mb-10"><span class="text-red-600 items-center">Latest </span>News</p>
 
     <div class="container mx-auto mb-10 p-4 md:p-10 space-y-4 md:space-y-2 md:space-x-2 flex flex-wrap justify-center">
-        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+        <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md md:mt-2 mt-2  p-4">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
             <p class="font-bold p-3"> Reaching Out With Food, Oxygen & 
                 Care: Endearing Stories In The Time 
                 Of Covid</p>
         </div>
         <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">2nd July 2022</p> <br>
             <p class="font-bold p-3">Meghashrey NGO Along With Its 
                 Founder Seema Singh Spreads Joy 
@@ -80,7 +69,7 @@
                 Organising A Christmas Carnival</p>
         </div>
         <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3"> 15th January 2021</p> <br>
             <p class="font-bold p-3">Indian American NGO Jumps To 10th 
                 Spot Among Charitable 
@@ -89,14 +78,14 @@
                 Covid-19 Cri</p>
         </div>
         <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">12th Octomber 2022</p> <br>
             <p class="font-bold p-3"> Reaching Out With Food, Oxygen & 
                 Care: Endearing Stories In The Time 
                 Of Covid</p>
         </div>
         <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3">2nd July 2022</p> <br>
             <p class="font-bold p-3">Meghashrey NGO Along With Its 
                 Founder Seema Singh Spreads Joy 
@@ -104,7 +93,7 @@
                 Organising A Christmas Carnival</p>
         </div>
         <div class="w-full md:w-1/4  border-2 border-y-orange-600 shadow-lg rounded-md m-4 p-4">
-            <img class="rounded-lg" src="../image/products.jpeg" alt="">
+            <img class="rounded-lg" src="image/products.jpeg" alt="">
             <p class="text-orange-600 p-3"> 15th January 2021</p> <br>
             <p class="font-bold p-3">Indian American NGO Jumps To 10th 
                 Spot Among Charitable 
@@ -117,7 +106,7 @@
     </div>
 
 
-    <div class="my-10  grid-cols-2 flex-wrap md:grid mx-10 justify-between">
+    <div class="my-10  grid-cols-2 flex-wrap md:grid mx-10 justify-between gap-5">
         <div class="mx-4 flex-wrap md:flex-row">
             <div class="border-b-2 border-b-gray-600 rounded-b-sm">
                 <p class="font-bold">Related News</p>
@@ -159,7 +148,7 @@
 
             </div>
         </div>
-        <div class="ml-9">
+        <div class="ml-9 mt-5 md:m-0">
             <div class="border-b-2 border-b-gray-600 rounded-b-sm">
                 <p class="font-bold">News Category</p>
             </div>
